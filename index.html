@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mind Logic</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">Mind Logic</h1>
+
+<!-- START PAGE -->
+<div id="startScreen" class="card">
+
+<h2>🧠 MIND LOGIC</h2>
+
+<p>Enter Your Name</p>
+
+<input id="playerName" placeholder="Your name">
+
+<button onclick="startGame()">Start Game</button>
+
+</div>
+
+
+<!-- DESCRIPTION PAGE -->
+<div id="descScreen" class="hidden descPage">
+
+<h1 class="descTitle">Description</h1>
+
+<p class="descText">
+This web game is an interactive learning tool that challenges players with various logic-based questions.
+</p>
+
+<p class="descText">
+It helps improve critical thinking and decision-making skills.
+</p>
+
+<p class="descText">
+Players need to reach at least <b>70%</b> of the total score in order to pass the challenge.
+</p>
+
+<button onclick="startLevel1()" class="playBtn">Play</button>
+
+</div>
+
+
+<!-- QUIZ PAGE -->
+<div id="quizScreen" class="hidden quizContainer">
+
+<div class="progressText" id="progressText">
+Question 1 / 10
+</div>
+
+<div class="progressBar">
+<div class="progressFill" id="progressFill"></div>
+</div>
+
+<div class="scoreBar">
+Score: <span id="score">0</span>
+</div>
+
+<h2 id="question">Question here</h2>
+
+<div id="answers" class="answers"></div>
+
+<button id="nextBtn" onclick="nextQuestion()" class="nextBtn hidden">
+Next Question
+</button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
